@@ -1,0 +1,40 @@
+/* styles.css */
+
+/* Header Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #3498db;
+  }
+  
+  /* Additional Block Hover Effect */
+  .additional-piece:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Day Hover Effect */
+  .day:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Event Hover Effect */
+  .event:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,69 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  
+  header a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+  }
+  
+  .club-profile {
+    width: 30%;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .club-profile:hover {
+    transform: scale(1.05);
+  }
+  
+  .club-logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .club-profile:hover .club-logo {
+    transform: rotate(360deg);
+  }
+  
+  .club-name {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    color: #3498db;
+    transition: color 0.3s;
+  }
+  
+  .club-profile:hover .club-name {
+    color: #2980b9;
+  }
+  
