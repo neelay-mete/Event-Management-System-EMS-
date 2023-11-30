@@ -17,15 +17,16 @@ def login():
     if username and password:
         # Redirect to the appropriate route based on user type
         if user_type == 'student':
-            return redirect(url_for('web1'))
+            return redirect('web1')
         elif user_type == 'teacher':
-            return redirect(url_for('web2'))
+            return redirect('web2')
     
     # If authentication fails or form data is incomplete, redirect back to the login page
-    return redirect(url_for('index'))
+    return redirect('login.html')
 @app.route('/web1')
 def web1():
-    return render_template('web1.html')
+    return render_template('index.html')
+
 @app.route('/web2')
 def web2():
     return render_template('web2.html')
@@ -47,4 +48,4 @@ def about():
     return render_template('about.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, use_debugger=False, use_reloader=False)
+    app.run(debug=True)
